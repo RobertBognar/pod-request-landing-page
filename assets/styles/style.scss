@@ -19,27 +19,27 @@ body {
 
 .container {
   position: $parentPosition;
-  width: 70%;
+  width: 80%;
   margin: auto;
-  padding-top: 100px;
+  padding-top: 94px;
 }
 
 header {
   .header-container {
+    position: $childPosition;
     img {
-      margin: 62px auto;
+      margin: -24px 0px 0px 88px;
       display: $displayBlock;
     }
   }
 }
 
 main {
-  position: $parentPosition;
-  top: 25px;
+  position: $childPosition;
+  top: 188px;
+  right: -16px;
   .hero {
     h1 {
-      width: $headerMobileWidth;
-      height: $headerMobileHeight;
       font-weight: $fontWeight;
       font-size: $headerMobileFontSize;
       line-height: $headerMobileLineHeight;
@@ -52,8 +52,6 @@ main {
       }
     }
     p {
-      width: $paragraphMobileWidht;
-      height: $paragraphMobileHeight;
       margin-top: 16px;
       font-size: $paragraphMobileFontSize;
       font-weight: $fontWeight;
@@ -64,6 +62,8 @@ main {
     }
   }
   .networks {
+    width: 315px;
+    height: 17px;
     display: $flex;
     margin: 30px auto 0;
     flex-wrap: wrap;
@@ -83,6 +83,8 @@ main {
     }
   }
   form {
+    width: 327px;
+    height: 108px;
     margin-top: 48px;
     position: $parentPosition;
   }
@@ -107,8 +109,9 @@ main {
   }
   input.submitInfo {
     width: 100%;
+    background-color: $inputBackgroundColor;
     padding: 10px;
-    padding-left: 40px;
+    padding-left: 30px;
     border: $borderNone;
     border-radius: $borderRadius;
     line-height: $buttonMobileTextLineHeight;

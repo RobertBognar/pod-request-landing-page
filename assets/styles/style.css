@@ -18,24 +18,27 @@ body {
 
 .container {
   position: relative;
-  width: 70%;
+  width: 80%;
   margin: auto;
-  padding-top: 100px;
+  padding-top: 94px;
+}
+
+header .header-container {
+  position: absolute;
 }
 
 header .header-container img {
-  margin: 62px auto;
+  margin: -24px 0px 0px 88px;
   display: block;
 }
 
 main {
-  position: relative;
-  top: 25px;
+  position: absolute;
+  top: 188px;
+  right: -16px;
 }
 
 main .hero h1 {
-  width: 327px;
-  height: 76px;
   font-weight: 400;
   font-size: 26px;
   line-height: 38px;
@@ -50,8 +53,6 @@ main .hero h1 span {
 }
 
 main .hero p {
-  width: 327px;
-  height: 100px;
   margin-top: 16px;
   font-size: 15px;
   font-weight: 400;
@@ -62,6 +63,8 @@ main .hero p {
 }
 
 main .networks {
+  width: 315px;
+  height: 17px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -93,6 +96,8 @@ main .networks .pocket-list {
 }
 
 main form {
+  width: 327px;
+  height: 108px;
   margin-top: 48px;
   position: relative;
 }
@@ -121,8 +126,9 @@ main input[type="submit"]:hover {
 
 main input.submitInfo {
   width: 100%;
+  background-color: #2C344B;
   padding: 10px;
-  padding-left: 40px;
+  padding-left: 30px;
   border: none;
   border-radius: 30px;
   line-height: 28px;
