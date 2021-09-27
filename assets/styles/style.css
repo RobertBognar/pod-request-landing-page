@@ -16,15 +16,6 @@ body {
   overflow-x: hidden;
 }
 
-@media (min-width: 768px) {
-  body {
-    background-blend-mode: normal;
-    background-size: 64%;
-    background-position: right top;
-    background-image: url("../images/tablet/image-host.jpg");
-  }
-}
-
 .container {
   position: relative;
   width: 82%;
@@ -32,11 +23,7 @@ body {
   padding-top: 94px;
 }
 
-header .header-container {
-  position: absolute;
-}
-
-header .header-container img {
+.header-container img {
   margin: -24px 0px 0px 92px;
   display: block;
 }
@@ -47,7 +34,7 @@ main {
   right: -16px;
 }
 
-main .hero h1 {
+h1 {
   font-weight: 400;
   font-size: 26px;
   line-height: 38px;
@@ -57,11 +44,11 @@ main .hero h1 {
   color: #54E6AF;
 }
 
-main .hero h1 span {
+h1 span {
   color: #FFFF;
 }
 
-main .hero p {
+p {
   margin-top: 16px;
   font-size: 15px;
   font-weight: 400;
@@ -71,7 +58,7 @@ main .hero p {
   text-align: center;
 }
 
-main .networks {
+.networks {
   width: 98%;
   height: 100%;
   display: -webkit-box;
@@ -88,33 +75,32 @@ main .networks {
           align-items: baseline;
 }
 
-main .networks .spotify-list {
+.spotify-list {
   width: 56px;
 }
 
-main .networks .apple-list {
+.apple-list {
   width: 45px;
 }
 
-main .networks .google-list {
+.google-list {
   width: 73px;
 }
 
-main .networks .pocket-list {
+.pocket-list {
   width: 77px;
 }
 
-main form {
-  width: auto;
+form {
   margin-top: 48px;
   position: relative;
 }
 
-main input[type="submit"], main label {
+input[type="submit"], label {
   display: block;
 }
 
-main input[type="submit"] {
+input[type="submit"] {
   width: 100%;
   padding: 10px;
   background-color: #54E6AF;
@@ -128,11 +114,11 @@ main input[type="submit"] {
   cursor: pointer;
 }
 
-main input[type="submit"]:hover {
+input[type="submit"]:hover {
   background-color: #B3FFE2;
 }
 
-main input.submitInfo {
+input.submitInfo {
   width: 100%;
   background-color: #2C344B;
   padding: 10px;
@@ -144,7 +130,7 @@ main input.submitInfo {
   margin-bottom: 24px;
 }
 
-main span.errorMessage {
+span.errorMessage {
   width: 175px;
   height: 14px;
   display: none;
@@ -154,7 +140,7 @@ main span.errorMessage {
   color: #FB3E3E;
 }
 
-main span.showErrorMessage {
+span.showErrorMessage {
   display: block;
 }
 

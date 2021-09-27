@@ -27,12 +27,6 @@ body {
   background-color: $backgroundColor;
   color: $basicWhiteColor;
   overflow-x: hidden;
-  @include tablet {
-    background-blend-mode: normal;
-    background-size: 64%;
-    background-position: right top;
-    background-image: url("../images/tablet/image-host.jpg");
-  }
 }
 
 .container {
@@ -42,44 +36,40 @@ body {
   padding-top: 94px;
 }
 
-header {
-  .header-container {
-    position: $childPosition;
-    img {
-      margin: -24px 0px 0px 92px;
-      display: $displayBlock;
-    }
-  }
+.header-container img {
+  margin: -24px 0px 0px 92px;
+  display: $displayBlock;
 }
 
 main {
   position: $childPosition;
   top: 188px;
   right: -16px;
-  .hero {
-    h1 {
-      font-weight: $fontWeight;
-      font-size: $headerMobileFontSize;
-      line-height: $headerMobileLineHeight;
-      text-align: $textAlignCenter;
-      font-style: $fontStyle;
-      text-transform: uppercase;
-      color: $headerTextColor;
-      span {
-        color: $basicWhiteColor;
+}
+
+h1 {
+  font-weight: $fontWeight;
+  font-size: $headerMobileFontSize;
+  line-height: $headerMobileLineHeight;
+  text-align: $textAlignCenter;
+  font-style: $fontStyle;
+  text-transform: uppercase;
+  color: $headerTextColor;
+    span {
+      color: $basicWhiteColor;
       }
     }
-    p {
-      margin-top: 16px;
-      font-size: $paragraphMobileFontSize;
-      font-weight: $fontWeight;
-      font-style: $fontStyle;
-      line-height: $paragraphMobileLineHeight;
-      color: $paragraphTextColor;
-      text-align: $textAlignCenter;
-    }
-  }
-  .networks {
+p {
+  margin-top: 16px;
+  font-size: $paragraphMobileFontSize;
+  font-weight: $fontWeight;
+  font-style: $fontStyle;
+  line-height: $paragraphMobileLineHeight;
+  color: $paragraphTextColor;
+  text-align: $textAlignCenter;
+}
+  
+.networks {
     width: 98%;
     height: 100%;
     display: $flex;
@@ -87,28 +77,30 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
-    .spotify-list {
-      width: 56px;
-    }
-    .apple-list {
-      width: 45px;
-    }
-    .google-list {
-      width: 73px;
-    }
-    .pocket-list {
-      width: 77px;
-    }
-  }
-  form {
-    width: auto;
+}
+.spotify-list {
+    width: 56px;
+}
+.apple-list {
+    width: 45px;
+}
+.google-list {
+    width: 73px;
+}
+.pocket-list {
+    width: 77px;
+}
+  
+form {
     margin-top: 48px;
     position: $parentPosition;
-  }
-  input[type="submit"], label {
+}
+
+input[type="submit"], label {
     display: $displayBlock;
   }
-  input[type="submit"] {
+
+input[type="submit"] {
     width: 100%;
     padding: 10px;
     background-color: $buttonGreenColor;
@@ -124,7 +116,7 @@ main {
       background-color: $buttonHoverGreenColor;
     }
   }
-  input.submitInfo {
+input.submitInfo {
     width: 100%;
     background-color: $inputBackgroundColor;
     padding: 10px;
@@ -135,7 +127,7 @@ main {
     font-size: $buttonMobileTextSize;
     margin-bottom: 24px;
   }
-  span.errorMessage {
+span.errorMessage {
     width: 175px;
     height: 14px;
     display: $displayNone;
@@ -144,10 +136,11 @@ main {
     left: 21px;
     color: $errorMessageColor;
   }
-  span.showErrorMessage {
+span.showErrorMessage {
     display: $displayBlock;
   }
-}
 footer {
-  display: $displayNone;
+  display: none;
 }
+
+
