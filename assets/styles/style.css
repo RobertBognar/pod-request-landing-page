@@ -18,8 +18,8 @@ body {
 
 .container {
   position: relative;
-  width: 80%;
-  margin: auto;
+  width: 82%;
+  margin-left: 30px;
   padding-top: 94px;
 }
 
@@ -28,7 +28,7 @@ header .header-container {
 }
 
 header .header-container img {
-  margin: -24px 0px 0px 88px;
+  margin: -24px 0px 0px 92px;
   display: block;
 }
 
@@ -63,8 +63,8 @@ main .hero p {
 }
 
 main .networks {
-  width: 315px;
-  height: 17px;
+  width: 98%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -96,8 +96,7 @@ main .networks .pocket-list {
 }
 
 main form {
-  width: 327px;
-  height: 108px;
+  width: auto;
   margin-top: 48px;
   position: relative;
 }
