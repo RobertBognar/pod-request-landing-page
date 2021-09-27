@@ -1,4 +1,5 @@
 //COLORS
+$backgroundColor: #121725;
 $basicWhiteColor: #FFFF;
 $buttonGreenColor: #54E6AF;
 $buttonHoverGreenColor: #B3FFE2;
@@ -8,4 +9,30 @@ $buttonTextColor: #121725;
 $inputBackgroundColor: #2C344B;
 $mediaImagesColor: #5A668A;
 
+//TEXT DESKTOP
+$headerDesktopFontSize: 52px;
+$headerDesktopLineHeight: 62px;
+$paragraphDesktopFontSize: 18px;
+$paragraphDesktopLineHeight: 28px;
+$buttonDesktopTextSize: 14px;
+$buttonDesktopTextLineHeight: 28px;
 
+//TEXT TABLET
+$headerTabletFontSize: 48px;
+$headerTabletLineHeight: 56px;
+$paragraphTabletFontSize: 18px;
+$paragraphTabletLineHeight: 28px;
+$buttonTabletTextSize: 14px;
+$buttonTabletTextLineHeight: 28px;
+
+//TEXT MOBILE
+$headerMobileFontSize: 26px;
+$headerMobileLineHeight: 38px;
+$paragraphMobileFontSize: 15px;
+$paragraphMobileLineHeight: 25px;
+$buttonMobileTextSize: 14px;
+$buttonMobileTextLineHeight: 28px;
+
+//FONTS & WEIGHTS
+$mainFontFamily: "Chivo", sans-serif;
+$fontWeight: 400;
