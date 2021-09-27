@@ -4,4 +4,141 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+body {
+  font-family: "Chivo", sans-serif;
+  background-image: url("../images/mobile/image-host.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: #121725;
+  color: #FFFF;
+  overflow-x: hidden;
+}
+
+.container {
+  position: relative;
+  width: 70%;
+  margin: auto;
+  padding-top: 100px;
+}
+
+header .header-container img {
+  margin: 62px auto;
+  display: block;
+}
+
+main {
+  position: relative;
+  top: 25px;
+}
+
+main .hero h1 {
+  width: 327px;
+  height: 76px;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 38px;
+  text-align: center;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #54E6AF;
+}
+
+main .hero h1 span {
+  color: #FFFF;
+}
+
+main .hero p {
+  width: 327px;
+  height: 100px;
+  margin-top: 16px;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 25px;
+  color: #C2CBE5;
+  text-align: center;
+}
+
+main .networks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px auto 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+main .networks .spotify-list {
+  width: 56px;
+}
+
+main .networks .apple-list {
+  width: 45px;
+}
+
+main .networks .google-list {
+  width: 73px;
+}
+
+main .networks .pocket-list {
+  width: 77px;
+}
+
+main form {
+  margin-top: 48px;
+  position: relative;
+}
+
+main input[type="submit"], main label {
+  display: block;
+}
+
+main input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #54E6AF;
+  border: none;
+  border-radius: 30px;
+  line-height: 28px;
+  font-size: 14px;
+  color: #121725;
+  font-style: normal;
+  font-weight: normal;
+}
+
+main input.submitInfo {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  line-height: 28px;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+main span.errorMessage {
+  width: 175px;
+  height: 14px;
+  display: none;
+  position: relative;
+  top: -10px;
+  left: 21px;
+  color: #FB3E3E;
+}
+
+main span.showErrorMessage {
+  display: block;
+}
+
+footer {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */

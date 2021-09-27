@@ -5,3 +5,124 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body { 
+  font-family: $mainFontFamily;
+  background-image: url("../images/mobile/image-host.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: $backgroundColor;
+  color: $basicWhiteColor;
+  overflow-x: hidden;
+}
+
+.container {
+  position: $parentPosition;
+  width: 70%;
+  margin: auto;
+  padding-top: 100px;
+}
+
+header {
+  .header-container {
+    img {
+      margin: 62px auto;
+      display: $displayBlock;
+    }
+  }
+}
+
+main {
+  position: $parentPosition;
+  top: 25px;
+  .hero {
+    h1 {
+      width: $headerMobileWidth;
+      height: $headerMobileHeight;
+      font-weight: $fontWeight;
+      font-size: $headerMobileFontSize;
+      line-height: $headerMobileLineHeight;
+      text-align: $textAlignCenter;
+      font-style: $fontStyle;
+      text-transform: uppercase;
+      color: $headerTextColor;
+      span {
+        color: $basicWhiteColor;
+      }
+    }
+    p {
+      width: $paragraphMobileWidht;
+      height: $paragraphMobileHeight;
+      margin-top: 16px;
+      font-size: $paragraphMobileFontSize;
+      font-weight: $fontWeight;
+      font-style: $fontStyle;
+      line-height: $paragraphMobileLineHeight;
+      color: $paragraphTextColor;
+      text-align: $textAlignCenter;
+    }
+  }
+  .networks {
+    display: $flex;
+    margin: 30px auto 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    .spotify-list {
+      width: 56px;
+    }
+    .apple-list {
+      width: 45px;
+    }
+    .google-list {
+      width: 73px;
+    }
+    .pocket-list {
+      width: 77px;
+    }
+  }
+  form {
+    margin-top: 48px;
+    position: $parentPosition;
+  }
+  input[type="submit"], label {
+    display: $displayBlock;
+  }
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: $buttonGreenColor;
+    border: $borderNone;
+    border-radius: $borderRadius;
+    line-height: $buttonMobileTextLineHeight;
+    font-size: $buttonMobileTextSize;
+    color: $buttonTextColor;
+    font-style: $fontStyle;
+    font-weight: $fontWeightNormal;
+  }
+  input.submitInfo {
+    width: 100%;
+    padding: 10px;
+    border: $borderNone;
+    border-radius: $borderRadius;
+    line-height: $buttonMobileTextLineHeight;
+    font-size: $buttonMobileTextSize;
+    margin-bottom: 24px;
+  }
+  span.errorMessage {
+    width: 175px;
+    height: 14px;
+    display: $displayNone;
+    position: $parentPosition;
+    top: -10px;
+    left: 21px;
+    color: $errorMessageColor;
+  }
+  span.showErrorMessage {
+    display: $displayBlock;
+  }
+}
+footer {
+  display: $displayNone;
+}

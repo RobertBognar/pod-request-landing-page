@@ -8,6 +8,7 @@ $paragraphTextColor: #C2CBE5;
 $buttonTextColor: #121725;
 $inputBackgroundColor: #2C344B;
 $mediaImagesColor: #5A668A;
+$errorMessageColor: #FB3E3E;
 
 //TEXT DESKTOP
 $headerDesktopFontSize: 52px;
@@ -28,11 +29,36 @@ $buttonTabletTextLineHeight: 28px;
 //TEXT MOBILE
 $headerMobileFontSize: 26px;
 $headerMobileLineHeight: 38px;
+$headerMobileWidth: 327px;
+$headerMobileHeight: 76px;
 $paragraphMobileFontSize: 15px;
 $paragraphMobileLineHeight: 25px;
+$paragraphMobileWidht: 327px;
+$paragraphMobileHeight: 100px;
 $buttonMobileTextSize: 14px;
 $buttonMobileTextLineHeight: 28px;
 
 //FONTS & WEIGHTS
 $mainFontFamily: "Chivo", sans-serif;
+$fontStyle: normal;
+$fontWeightNormal: normal;
 $fontWeight: 400;
+
+//ALIGNS, CENTERS, DISPLAYS, Z-INDEX, POSITIONS
+$textAlignCenter: center;
+$parentPosition: relative;
+$childPosition: absolute;
+$flex: flex;
+$grid: grid;
+$displayBlock: block;
+$displayFlex: flex;
+$displayNone: none;
+
+//RESPONSIVNES SIZES
+$desktop: 1440px;
+$tablet: 768px;
+$mobile: 375px;
+
+//BORDERS
+$borderNone: none;
+$borderRadius: 30px;
