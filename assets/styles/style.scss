@@ -99,11 +99,16 @@ main {
     font-size: $buttonMobileTextSize;
     color: $buttonTextColor;
     font-style: $fontStyle;
-    font-weight: $fontWeightNormal;
+    font-weight: bold;
+    cursor: pointer;
+    &:hover {
+      background-color: $buttonHoverGreenColor;
+    }
   }
   input.submitInfo {
     width: 100%;
     padding: 10px;
+    padding-left: 40px;
     border: $borderNone;
     border-radius: $borderRadius;
     line-height: $buttonMobileTextLineHeight;

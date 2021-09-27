@@ -111,12 +111,18 @@ main input[type="submit"] {
   font-size: 14px;
   color: #121725;
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+main input[type="submit"]:hover {
+  background-color: #B3FFE2;
 }
 
 main input.submitInfo {
   width: 100%;
   padding: 10px;
+  padding-left: 40px;
   border: none;
   border-radius: 30px;
   line-height: 28px;
