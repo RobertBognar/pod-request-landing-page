@@ -46,13 +46,16 @@ $fontWeight: 400;
 
 //ALIGNS, CENTERS, DISPLAYS, Z-INDEX, POSITIONS
 $textAlignCenter: center;
+$textAlignLeft: left;
 $parentPosition: relative;
 $childPosition: absolute;
 $flex: flex;
 $grid: grid;
 $displayBlock: block;
 $displayFlex: flex;
+$displayGrid: grid;
 $displayNone: none;
+$childZIndex: 1;
 
 //RESPONSIVNES SIZES
 $desktop: 1440px;

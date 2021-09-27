@@ -16,6 +16,15 @@ body {
   overflow-x: hidden;
 }
 
+@media (min-width: 768px) {
+  body {
+    background-blend-mode: normal;
+    background-size: 64%;
+    background-position: right top;
+    background-image: url("../images/tablet/image-host.jpg");
+  }
+}
+
 .container {
   position: relative;
   width: 82%;
