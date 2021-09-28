@@ -25,6 +25,13 @@ body {
   }
 }
 
+@media (min-width: 1440px) {
+  body {
+    background-image: url("../images/desktop/image-host.jpg");
+    background-position: right 130px;
+  }
+}
+
 .container {
   position: relative;
   width: 82%;
@@ -41,6 +48,14 @@ body {
   }
 }
 
+@media (min-width: 1440px) {
+  .container {
+    margin-left: -388px;
+    margin-top: 142px;
+    width: 86%;
+  }
+}
+
 .header-container img {
   margin: -24px 0px 0px 92px;
   display: block;
@@ -52,6 +67,13 @@ body {
     margin-top: -182px;
     width: 134.85px;
     height: 56px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header-container img {
+    margin-left: 504px;
+    margin-top: -134px;
   }
 }
 
@@ -70,6 +92,12 @@ main {
     display: grid;
     -ms-grid-rows: 2fr 1fr 1fr;
         grid-template-rows: 2fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1440px) {
+  main {
+    width: 60%;
   }
 }
 
@@ -101,6 +129,14 @@ h1 span {
     line-height: 56px;
     letter-spacing: 1px;
     opacity: 90%;
+  }
+}
+
+@media (min-width: 1440px) {
+  h1 {
+    font-size: 52px;
+    line-height: 62px;
+    width: 675px;
   }
 }
 
@@ -149,6 +185,13 @@ p {
     width: 85%;
     margin-left: 0;
     margin-top: 4px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .networks {
+    width: 536px;
+    margin-top: -8px;
   }
 }
 
@@ -246,6 +289,14 @@ input[type="submit"]:hover {
   }
 }
 
+@media (min-width: 1440px) {
+  input[type="submit"] {
+    position: absolute;
+    width: 34%;
+    right: 62px;
+  }
+}
+
 input.submitInfo {
   width: 100%;
   background-color: #2C344B;
@@ -268,19 +319,26 @@ input.submitInfo {
   }
 }
 
+@media (min-width: 1440px) {
+  input.submitInfo {
+    width: 88.5%;
+  }
+}
+
 span.errorMessage {
-  width: 175px;
+  width: 100%;
   height: 14px;
   display: none;
   position: relative;
-  top: -10px;
+  top: -14px;
   left: 21px;
   color: #FB3E3E;
 }
 
 @media (min-width: 768px) {
   span.errorMessage {
-    top: 12px;
+    top: 62px;
+    width: 100%;
   }
 }
 
@@ -298,6 +356,15 @@ footer {
     position: absolute;
     width: 232px;
     top: 780px;
+  }
+}
+
+@media (min-width: 1440px) {
+  footer {
+    left: auto;
+    right: -586px;
+    width: 232px;
+    top: 600px;
   }
 }
 

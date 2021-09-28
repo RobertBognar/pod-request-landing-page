@@ -9,9 +9,9 @@ input.addEventListener("invalid", () => {
 input.addEventListener("input", () => {
     error.classList.remove("showErrorMessage");
 })
-//Submiting form through html form, prevent default for not refreshing list & reseting the value to the blank
+//Submiting form through html form, prevent default for not refreshing list & reseting the value to the blank and showing successfuly submited form via alert
 form.addEventListener("submit", (e) => {
     e.preventDefault();
-    alert('Thank you for submitting the form!')
-    input.value = ""
+    alert('Thank you for submitting the form!');
+    input.value = "";
 })
