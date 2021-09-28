@@ -53,7 +53,7 @@ body {
   display: $displayBlock;
   @include tablet {
     margin-left: 14px;
-    margin-top: -172px;
+    margin-top: -182px;
     width: 134.85px;
     height: 56px;
   }
@@ -86,6 +86,7 @@ h1 {
   font-style: $fontStyle;
   text-transform: uppercase;
   color: $headerTextColor;
+  opacity: $headerTextOpacityMobile;
   span {
     color: $basicWhiteColor;
   }
@@ -94,6 +95,7 @@ h1 {
     font-size: $headerTabletFontSize;
     line-height: $headerTabletLineHeight;
     letter-spacing: 1px;
+    opacity: $headerTextOpacityTabletAndDesktop;
   }
 }
 p {
@@ -104,11 +106,14 @@ p {
   line-height: $paragraphMobileLineHeight;
   color: $paragraphTextColor;
   text-align: $textAlignCenter;
+  opacity: $paragraphTextOpacity;
   @include tablet {
     text-align: $textAlignLeft;
     font-size: $paragraphTabletFontSize;
     line-height: $paragraphTabletLineHeight;
     width: 445px;
+    padding-top: 12px;
+    padding-bottom: 2px;
   }
 }
   
@@ -120,9 +125,11 @@ p {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
+    opacity: $networkAvatarOpacity;
     @include tablet {
       width: 85%;
       margin-left: 0;
+      margin-top: 4px;
     }
 }
 .spotify-list {
@@ -187,6 +194,7 @@ input[type="submit"] {
       top: 5px;
       width: 38.5%;
       right: 5px;
+      font-weight: bold;
       &:hover {
         cursor: pointer;
         background-color: $buttonHoverGreenColor;
@@ -204,8 +212,11 @@ input.submitInfo {
     font-size: $buttonMobileTextSize;
     margin-bottom: 24px;
     @include tablet {
+      position: $childPosition;
       padding: 15px;
       margin-bottom: 0;
+      padding-left: 36px;
+      color: $basicWhiteColor;
     }
   }
 span.errorMessage {
@@ -225,6 +236,18 @@ span.showErrorMessage {
   }
 footer {
   display: none;
+  @include tablet {
+    display: $displayBlock;
+    position: $childPosition;
+    width: 232px;
+    top: 780px;
+  }
+}
+
+footer img {
+  width: 100%;
+  display: $displayBlock;
+  margin: auto;
 }
 
 

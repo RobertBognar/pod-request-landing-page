@@ -49,7 +49,7 @@ body {
 @media (min-width: 768px) {
   .header-container img {
     margin-left: 14px;
-    margin-top: -172px;
+    margin-top: -182px;
     width: 134.85px;
     height: 56px;
   }
@@ -87,6 +87,7 @@ h1 {
   font-style: normal;
   text-transform: uppercase;
   color: #54E6AF;
+  opacity: 70%;
 }
 
 h1 span {
@@ -99,6 +100,7 @@ h1 span {
     font-size: 48px;
     line-height: 56px;
     letter-spacing: 1px;
+    opacity: 90%;
   }
 }
 
@@ -110,6 +112,7 @@ p {
   line-height: 25px;
   color: #C2CBE5;
   text-align: center;
+  opacity: 70%;
 }
 
 @media (min-width: 768px) {
@@ -118,6 +121,8 @@ p {
     font-size: 18px;
     line-height: 28px;
     width: 445px;
+    padding-top: 12px;
+    padding-bottom: 2px;
   }
 }
 
@@ -136,12 +141,14 @@ p {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  opacity: 50%;
 }
 
 @media (min-width: 768px) {
   .networks {
     width: 85%;
     margin-left: 0;
+    margin-top: 4px;
   }
 }
 
@@ -231,6 +238,7 @@ input[type="submit"]:hover {
     top: 5px;
     width: 38.5%;
     right: 5px;
+    font-weight: bold;
   }
   input[type="submit"]:hover {
     cursor: pointer;
@@ -252,8 +260,11 @@ input.submitInfo {
 
 @media (min-width: 768px) {
   input.submitInfo {
+    position: absolute;
     padding: 15px;
     margin-bottom: 0;
+    padding-left: 36px;
+    color: #FFFF;
   }
 }
 
@@ -279,5 +290,20 @@ span.showErrorMessage {
 
 footer {
   display: none;
+}
+
+@media (min-width: 768px) {
+  footer {
+    display: block;
+    position: absolute;
+    width: 232px;
+    top: 780px;
+  }
+}
+
+footer img {
+  width: 100%;
+  display: block;
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */
