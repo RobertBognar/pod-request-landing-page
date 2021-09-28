@@ -69,6 +69,12 @@ body {
   display: block;
 }
 
+@media (min-width: 375px) {
+  .header-container img {
+    opacity: 92%;
+  }
+}
+
 @media (min-width: 768px) {
   .header-container img {
     margin-left: 14px;
@@ -94,7 +100,7 @@ body {
 
 main {
   position: absolute;
-  top: 188px;
+  top: 174px;
   right: -16px;
 }
 

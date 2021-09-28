@@ -18,6 +18,12 @@
   }
 }
 
+@mixin mobile {
+  @media (min-width: #{$mobile}) {
+    @content;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -71,6 +77,9 @@ body {
 .header-container img {
   margin: -24px 0px 0px 92px;
   display: $displayBlock;
+  @include mobile {
+    opacity: $logoMobileOpacity;
+  }
   @include tablet {
     margin-left: 14px;
     margin-top: -182px;
@@ -89,7 +98,7 @@ body {
 
 main {
   position: $childPosition;
-  top: 188px;
+  top: 174px;
   right: -16px;
   @include tablet {
     width: 100%;
@@ -216,7 +225,7 @@ form {
 input[type="submit"], label {
     display: $displayBlock;
   }
-
+  
 input[type="submit"] {
     width: 100%;
     padding: 10px;
