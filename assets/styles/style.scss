@@ -1,5 +1,11 @@
 @import "variables";
 
+@mixin largerScreens {
+  @media (min-width: #{$largerScreens}) {
+    @content;
+  }
+}
+
 @mixin desktop {
   @media (min-width: #{$desktop}) {
     @content;
@@ -55,6 +61,11 @@ body {
     margin-top: 142px;
     width: 86%;
   }
+  @include largerScreens {
+    margin-left: -340px;
+    margin-top: 358px;
+    width: 80%;
+  }
 }
 
 .header-container img {
@@ -70,6 +81,10 @@ body {
     margin-left: 504px;
     margin-top: -134px;
   }
+  @include largerScreens {
+    margin-left: 620px;
+    margin-top: -348px;
+  }
 }
 
 main {
@@ -84,6 +99,9 @@ main {
     grid-template-rows: 2fr 1fr 1fr;
   }
   @include desktop {
+    width: 60%;
+  }
+  @include largerScreens {
     width: 60%;
   }
 }
@@ -230,6 +248,11 @@ input[type="submit"] {
       width: 34%;
       right: 62px;
     }
+    @include largerScreens {
+      position: $childPosition;
+      width: 34%;
+      right: 76px;
+    }
   }
 input.submitInfo {
     width: 100%;
@@ -278,9 +301,14 @@ footer {
   }
   @include desktop {
     left: auto;
-        right: -586px;
-        width: 232px;
-        top: 600px;
+    right: -586px;
+    width: 232px;
+    top: 600px;
+  }
+  @include largerScreens {
+    left: auto;
+    right: -720px;
+    top: 600px;
   }
 }
 
@@ -289,5 +317,3 @@ footer img {
   display: $displayBlock;
   margin: auto;
 }
-
-
