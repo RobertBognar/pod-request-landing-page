@@ -16,6 +16,15 @@ body {
   overflow-x: hidden;
 }
 
+@media (min-width: 768px) {
+  body {
+    background-image: url("../images/tablet/image-host.jpg");
+    background-blend-mode: normal;
+    background-size: 64%;
+    background-position: right top;
+  }
+}
+
 .container {
   position: relative;
   width: 82%;
@@ -23,15 +32,51 @@ body {
   padding-top: 94px;
 }
 
+@media (min-width: 768px) {
+  .container {
+    margin: auto 40px;
+    margin-top: 140px;
+    margin-left: 20px;
+    width: 83%;
+  }
+}
+
 .header-container img {
   margin: -24px 0px 0px 92px;
   display: block;
+}
+
+@media (min-width: 768px) {
+  .header-container img {
+    margin-left: 14px;
+    margin-top: -172px;
+    width: 134.85px;
+    height: 56px;
+  }
 }
 
 main {
   position: absolute;
   top: 188px;
   right: -16px;
+}
+
+@media (min-width: 768px) {
+  main {
+    width: 100%;
+    top: 120px;
+    background-color: #121725;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 2fr 1fr 1fr;
+        grid-template-rows: 2fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding-top: 94px;
+  }
 }
 
 h1 {
@@ -48,6 +93,15 @@ h1 span {
   color: #FFFF;
 }
 
+@media (min-width: 768px) {
+  h1 {
+    text-align: left;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: 1px;
+  }
+}
+
 p {
   margin-top: 16px;
   font-size: 15px;
@@ -56,6 +110,15 @@ p {
   line-height: 25px;
   color: #C2CBE5;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  p {
+    text-align: left;
+    font-size: 18px;
+    line-height: 28px;
+    width: 445px;
+  }
 }
 
 .networks {
@@ -75,25 +138,69 @@ p {
           align-items: baseline;
 }
 
+@media (min-width: 768px) {
+  .networks {
+    width: 85%;
+    margin-left: 0;
+  }
+}
+
 .spotify-list {
   width: 56px;
+}
+
+@media (min-width: 768px) {
+  .spotify-list {
+    width: 96px;
+    height: 29px;
+  }
 }
 
 .apple-list {
   width: 45px;
 }
 
+@media (min-width: 768px) {
+  .apple-list {
+    width: 78px;
+    height: 29px;
+  }
+}
+
 .google-list {
   width: 73px;
+}
+
+@media (min-width: 768px) {
+  .google-list {
+    width: 125px;
+    height: 18px;
+  }
 }
 
 .pocket-list {
   width: 77px;
 }
 
+@media (min-width: 768px) {
+  .pocket-list {
+    width: 129px;
+    height: 26px;
+  }
+}
+
 form {
   margin-top: 48px;
   position: relative;
+}
+
+@media (min-width: 768px) {
+  form {
+    width: 68%;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: 2/1;
+  }
 }
 
 input[type="submit"], label {
@@ -118,6 +225,19 @@ input[type="submit"]:hover {
   background-color: #B3FFE2;
 }
 
+@media (min-width: 768px) {
+  input[type="submit"] {
+    position: absolute;
+    top: 5px;
+    width: 38.5%;
+    right: 5px;
+  }
+  input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #B3FFE2;
+  }
+}
+
 input.submitInfo {
   width: 100%;
   background-color: #2C344B;
@@ -130,6 +250,13 @@ input.submitInfo {
   margin-bottom: 24px;
 }
 
+@media (min-width: 768px) {
+  input.submitInfo {
+    padding: 15px;
+    margin-bottom: 0;
+  }
+}
+
 span.errorMessage {
   width: 175px;
   height: 14px;
@@ -138,6 +265,12 @@ span.errorMessage {
   top: -10px;
   left: 21px;
   color: #FB3E3E;
+}
+
+@media (min-width: 768px) {
+  span.errorMessage {
+    top: 12px;
+  }
 }
 
 span.showErrorMessage {

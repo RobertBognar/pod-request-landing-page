@@ -27,6 +27,12 @@ body {
   background-color: $backgroundColor;
   color: $basicWhiteColor;
   overflow-x: hidden;
+  @include tablet {
+    background-image: url("../images/tablet/image-host.jpg");
+    background-blend-mode: normal;
+    background-size: 64%;
+    background-position: right top;
+  }
 }
 
 .container {
@@ -34,17 +40,42 @@ body {
   width: 82%;
   margin-left: 30px;
   padding-top: 94px;
+  @include tablet {
+    margin: auto 40px;
+    margin-top: 140px;
+    margin-left: 20px;
+    width: 83%;
+  }
 }
 
 .header-container img {
   margin: -24px 0px 0px 92px;
   display: $displayBlock;
+  @include tablet {
+    margin-left: 14px;
+    margin-top: -172px;
+    width: 134.85px;
+    height: 56px;
+  }
 }
 
 main {
   position: $childPosition;
   top: 188px;
   right: -16px;
+  @include tablet {
+    width: 100%;
+    top: 120px;
+    background-color: $backgroundColor;
+    display: $displayGrid;
+    grid-template-rows: 2fr 1fr 1fr;
+  }
+}
+
+.hero {
+  @include tablet {
+    padding-top: 94px;
+  }
 }
 
 h1 {
@@ -55,10 +86,16 @@ h1 {
   font-style: $fontStyle;
   text-transform: uppercase;
   color: $headerTextColor;
-    span {
-      color: $basicWhiteColor;
-      }
-    }
+  span {
+    color: $basicWhiteColor;
+  }
+  @include tablet {
+    text-align: $textAlignLeft;
+    font-size: $headerTabletFontSize;
+    line-height: $headerTabletLineHeight;
+    letter-spacing: 1px;
+  }
+}
 p {
   margin-top: 16px;
   font-size: $paragraphMobileFontSize;
@@ -67,6 +104,12 @@ p {
   line-height: $paragraphMobileLineHeight;
   color: $paragraphTextColor;
   text-align: $textAlignCenter;
+  @include tablet {
+    text-align: $textAlignLeft;
+    font-size: $paragraphTabletFontSize;
+    line-height: $paragraphTabletLineHeight;
+    width: 445px;
+  }
 }
   
 .networks {
@@ -77,23 +120,47 @@ p {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
+    @include tablet {
+      width: 85%;
+      margin-left: 0;
+    }
 }
 .spotify-list {
     width: 56px;
+    @include tablet {
+      width: 96px;
+      height: 29px;
+    }
 }
 .apple-list {
     width: 45px;
+    @include tablet {
+      width: 78px;
+      height: 29px;
+    }
 }
 .google-list {
     width: 73px;
+    @include tablet {
+      width: 125px;
+      height: 18px;
+    }
 }
 .pocket-list {
     width: 77px;
+    @include tablet {
+      width: 129px;
+      height: 26px;
+    }
 }
   
 form {
     margin-top: 48px;
     position: $parentPosition;
+    @include tablet {
+      width: 68%;
+      grid-area: 2/1;
+    }
 }
 
 input[type="submit"], label {
@@ -115,6 +182,16 @@ input[type="submit"] {
     &:hover {
       background-color: $buttonHoverGreenColor;
     }
+    @include tablet {
+      position: $childPosition;
+      top: 5px;
+      width: 38.5%;
+      right: 5px;
+      &:hover {
+        cursor: pointer;
+        background-color: $buttonHoverGreenColor;
+      }
+    }
   }
 input.submitInfo {
     width: 100%;
@@ -126,6 +203,10 @@ input.submitInfo {
     line-height: $buttonMobileTextLineHeight;
     font-size: $buttonMobileTextSize;
     margin-bottom: 24px;
+    @include tablet {
+      padding: 15px;
+      margin-bottom: 0;
+    }
   }
 span.errorMessage {
     width: 175px;
@@ -135,6 +216,9 @@ span.errorMessage {
     top: -10px;
     left: 21px;
     color: $errorMessageColor;
+    @include tablet {
+      top: 12px;
+    }
   }
 span.showErrorMessage {
     display: $displayBlock;
