@@ -314,7 +314,7 @@ input[type="submit"]:hover {
   input[type="submit"] {
     position: absolute;
     width: 34%;
-    right: 62px;
+    right: 12.5%;
   }
 }
 
@@ -322,7 +322,7 @@ input[type="submit"]:hover {
   input[type="submit"] {
     position: absolute;
     width: 34%;
-    right: 76px;
+    right: 12.5%;
   }
 }
 

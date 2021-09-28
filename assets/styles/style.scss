@@ -246,12 +246,12 @@ input[type="submit"] {
     @include desktop {
       position: $childPosition;
       width: 34%;
-      right: 62px;
+      right: 12.5%;
     }
     @include largerScreens {
       position: $childPosition;
       width: 34%;
-      right: 76px;
+      right: 12.5%;
     }
   }
 input.submitInfo {
