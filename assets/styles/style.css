@@ -80,15 +80,15 @@ body {
 
 @media (min-width: 1440px) {
   .header-container img {
-    margin-left: 504px;
-    margin-top: -134px;
+    margin-left: 41%;
+    margin-top: -11%;
   }
 }
 
 @media (min-width: 1880px) {
   .header-container img {
-    margin-left: 620px;
-    margin-top: -348px;
+    margin-left: 40.5%;
+    margin-top: -23.5%;
   }
 }
 
@@ -400,8 +400,8 @@ footer {
 @media (min-width: 1880px) {
   footer {
     left: auto;
-    right: -720px;
-    top: 600px;
+    right: -49.5%;
+    top: 638%;
   }
 }
 

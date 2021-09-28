@@ -78,12 +78,12 @@ body {
     height: 56px;
   }
   @include desktop {
-    margin-left: 504px;
-    margin-top: -134px;
+    margin-left: 41%;
+    margin-top: -11%;
   }
   @include largerScreens {
-    margin-left: 620px;
-    margin-top: -348px;
+    margin-left: 40.5%;
+    margin-top: -23.5%;
   }
 }
 
@@ -307,8 +307,8 @@ footer {
   }
   @include largerScreens {
     left: auto;
-    right: -720px;
-    top: 600px;
+    right: -49.5%;
+    top: 638%;
   }
 }
 
