@@ -42,7 +42,7 @@ $buttonMobileTextLineHeight: 28px;
 $mainFontFamily: "Chivo", sans-serif;
 $fontStyle: normal;
 $fontWeightNormal: normal;
-$fontWeight: 400;
+$fontWeight: 300;
 
 //ALIGNS, CENTERS, DISPLAYS, Z-INDEX, POSITIONS
 $textAlignCenter: center;
@@ -56,6 +56,7 @@ $displayFlex: flex;
 $displayGrid: grid;
 $displayNone: none;
 $childZIndex: 1;
+$parentZIndex: -1;
 
 //RESPONSIVNES SIZES
 $largerScreens: 1880px;
@@ -70,6 +71,6 @@ $borderRadius: 30px;
 //OPACITY
 $logoMobileOpacity: 92%;
 $networkAvatarOpacity: 50%;
-$paragraphTextOpacity: 70%;
-$headerTextOpacityMobile: 70%;
+$paragraphTextOpacity: 80%;
+$headerTextOpacityMobile: 90%;
 $headerTextOpacityTabletAndDesktop: 90%;
