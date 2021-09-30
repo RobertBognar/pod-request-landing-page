@@ -1,0 +1,24 @@
+{
+  "name": "pod-request-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "prettier": "^2.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RobertBognar/pod-request-landing-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RobertBognar/pod-request-landing-page/issues"
+  },
+  "homepage": "https://github.com/RobertBognar/pod-request-landing-page#readme"
+}

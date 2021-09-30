@@ -1,0 +1,75 @@
+//COLORS
+$backgroundColor: #121725;
+$basicWhiteColor: #ffff;
+$buttonGreenColor: #54e6af;
+$buttonHoverGreenColor: #b3ffe2;
+$headerTextColor: #54e6af;
+$paragraphTextColor: #c2cbe5;
+$buttonTextColor: #121725;
+$inputBackgroundColor: #2c344b;
+$mediaImagesColor: #5a668a;
+$errorMessageColor: #fb3e3e;
+
+//TEXT DESKTOP
+$headerDesktopFontSize: 52px;
+$headerDesktopLineHeight: 62px;
+$paragraphDesktopFontSize: 18px;
+$paragraphDesktopLineHeight: 28px;
+$buttonDesktopTextSize: 14px;
+$buttonDesktopTextLineHeight: 28px;
+
+//TEXT TABLET
+$headerTabletFontSize: 48px;
+$headerTabletLineHeight: 56px;
+$paragraphTabletFontSize: 18px;
+$paragraphTabletLineHeight: 28px;
+$buttonTabletTextSize: 14px;
+$buttonTabletTextLineHeight: 28px;
+
+//TEXT MOBILE
+$headerMobileFontSize: 26px;
+$headerMobileLineHeight: 38px;
+$headerMobileWidth: 327px;
+$headerMobileHeight: 76px;
+$paragraphMobileFontSize: 15px;
+$paragraphMobileLineHeight: 25px;
+$paragraphMobileWidht: 327px;
+$paragraphMobileHeight: 100px;
+$buttonMobileTextSize: 14px;
+$buttonMobileTextLineHeight: 28px;
+
+//FONTS & WEIGHTS
+$mainFontFamily: 'Chivo', sans-serif;
+$fontWeightNormal: normal;
+$fontWeight: 300;
+
+//ALIGNS, CENTERS, DISPLAYS, Z-INDEX, POSITIONS
+$textAlignCenter: center;
+$textAlignLeft: left;
+$parentPosition: relative;
+$childPosition: absolute;
+$flex: flex;
+$grid: grid;
+$displayBlock: block;
+$displayFlex: flex;
+$displayGrid: grid;
+$displayNone: none;
+$childZIndex: 1;
+$parentZIndex: -1;
+
+//RESPONSIVNES SIZES
+$largerScreens: 1880px;
+$desktop: 1440px;
+$tablet: 768px;
+$mobile: 375px;
+
+//BORDERS
+$borderNone: none;
+$borderRadius: 30px;
+
+//OPACITY
+$logoMobileOpacity: 92%;
+$networkAvatarOpacity: 50%;
+$paragraphTextOpacity: 80%;
+$headerTextOpacityMobile: 90%;
+$headerTextOpacityTabletAndDesktop: 90%;
