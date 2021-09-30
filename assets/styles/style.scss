@@ -1,188 +1,187 @@
-@import "variables";
+@import 'variables';
 
 @mixin largerScreens {
-  @media (min-width: #{$largerScreens}) {
-    @content;
-  }
+    @media (min-width: #{$largerScreens}) {
+        @content;
+    }
 }
 
 @mixin desktop {
-  @media (min-width: #{$desktop}) {
-    @content;
-  }
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
 }
 
 @mixin tablet {
-  @media (min-width: #{$tablet}) {
-    @content;
-  }
+    @media (min-width: #{$tablet}) {
+        @content;
+    }
 }
 
 @mixin mobile {
-  @media (min-width: #{$mobile}) {
-    @content;
-  }
+    @media (min-width: #{$mobile}) {
+        @content;
+    }
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body { 
-  font-family: $mainFontFamily;
-  background-image: url("../images/mobile/image-host.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-blend-mode: multiply;
-  background-color: $backgroundColor;
-  color: $basicWhiteColor;
-  overflow-x: hidden;
-  @include mobile {
-    .opacity {
-      top: 0;
-      left: 0;
-      position: $childPosition;
-      z-index: $parentZIndex;
-      height: 100%;
-      width: 100%;
-      background: rgba($color: $mediaImagesColor, $alpha: 0.3);
+body {
+    font-family: $mainFontFamily;
+    background-image: url('../images/mobile/image-host.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: $backgroundColor;
+    color: $basicWhiteColor;
+    overflow-x: hidden;
+    @include mobile {
+        .opacity {
+            top: 0;
+            left: 0;
+            position: $childPosition;
+            z-index: $parentZIndex;
+            height: 100%;
+            width: 100%;
+            background: rgba($color: $mediaImagesColor, $alpha: 0.3);
+        }
     }
-  }
-  @include tablet {
-    background-image: url("../images/tablet/image-host.jpg");
-    background-blend-mode: normal;
-    background-size: 64%;
-    background-position: right top;
-    .opacity {
-      background: none;
+    @include tablet {
+        background-image: url('../images/tablet/image-host.jpg');
+        background-blend-mode: normal;
+        background-size: 64%;
+        background-position: right top;
+        .opacity {
+            background: none;
+        }
     }
-  }
-  @include desktop {
-    background-image: url("../images/desktop/image-host.jpg");
-    background-position: right 130px;
-    .opacity {
-      background: none;
+    @include desktop {
+        background-image: url('../images/desktop/image-host.jpg');
+        background-position: right 130px;
+        .opacity {
+            background: none;
+        }
     }
-  }
 }
 
 .container {
-  position: $parentPosition;
-  width: 82%;
-  margin-left: 24px;
-  padding-top: 88px;
-  @include tablet {
-    margin: auto 40px;
-    margin-top: 140px;
-    margin-left: 20px;
-    width: 83%;
-  }
-  @include desktop {
-    margin-left: -388px;
-    margin-top: 142px;
-    width: 86%;
-  }
-  @include largerScreens {
-    margin-left: -340px;
-    margin-top: 358px;
-    width: 80%;
-  }
+    position: $parentPosition;
+    width: 82%;
+    margin-left: 24px;
+    padding-top: 88px;
+    @include tablet {
+        margin: auto 40px;
+        margin-top: 140px;
+        margin-left: 20px;
+        width: 83%;
+    }
+    @include desktop {
+        margin-left: -388px;
+        margin-top: 142px;
+        width: 86%;
+    }
+    @include largerScreens {
+        margin-left: -340px;
+        margin-top: 358px;
+        width: 80%;
+    }
 }
 
 .header-container img {
-  margin: -24px 0px 0px 92px;
-  display: $displayBlock;
-  @include mobile {
-    opacity: $logoMobileOpacity;
-  }
-  @include tablet {
-    margin-left: 14px;
-    margin-top: -182px;
-    width: 134.85px;
-    height: 56px;
-  }
-  @include desktop {
-    margin-left: 41%;
-    margin-top: -11%;
-  }
-  @include largerScreens {
-    margin-left: 40.5%;
-    margin-top: -23.5%;
-  }
+    margin: -24px 0px 0px 92px;
+    display: $displayBlock;
+    @include mobile {
+        opacity: $logoMobileOpacity;
+    }
+    @include tablet {
+        margin-left: 14px;
+        margin-top: -182px;
+        width: 134.85px;
+        height: 56px;
+    }
+    @include desktop {
+        margin-left: 41%;
+        margin-top: -11%;
+    }
+    @include largerScreens {
+        margin-left: 40.5%;
+        margin-top: -23.5%;
+    }
 }
 
 main {
-  position: $childPosition;
-  top: 174px;
-  right: -16px;
-  @include tablet {
-    width: 100%;
-    top: 120px;
-    background-color: $backgroundColor;
-    display: $displayGrid;
-    grid-template-rows: 2fr 1fr 1fr;
-  }
-  @include desktop {
-    width: 60%;
-  }
-  @include largerScreens {
-    width: 60%;
-  }
+    position: $childPosition;
+    top: 174px;
+    right: -16px;
+    @include tablet {
+        width: 100%;
+        top: 120px;
+        background-color: $backgroundColor;
+        display: $displayGrid;
+        grid-template-rows: 2fr 1fr 1fr;
+    }
+    @include desktop {
+        width: 60%;
+    }
+    @include largerScreens {
+        width: 60%;
+    }
 }
 
 .hero {
-  @include tablet {
-    padding-top: 94px;
-  }
+    @include tablet {
+        padding-top: 94px;
+    }
 }
 
 h1 {
-  font-weight: $fontWeight;
-  font-size: $headerMobileFontSize;
-  line-height: $headerMobileLineHeight;
-  text-align: $textAlignCenter;
-  font-style: $fontStyle;
-  text-transform: uppercase;
-  color: $headerTextColor;
-  opacity: $headerTextOpacityMobile;
-  span {
-    color: $basicWhiteColor;
-  }
-  @include tablet {
-    text-align: $textAlignLeft;
-    font-size: $headerTabletFontSize;
-    line-height: $headerTabletLineHeight;
-    letter-spacing: 1px;
-    opacity: $headerTextOpacityTabletAndDesktop;
-  }
-  @include desktop {
-    font-size: $headerDesktopFontSize;
-    line-height: $headerDesktopLineHeight;
-    width: 675px;
-    
-  }
+    font-weight: $fontWeight;
+    font-size: $headerMobileFontSize;
+    line-height: $headerMobileLineHeight;
+    text-align: $textAlignCenter;
+    font-style: normal;
+    text-transform: uppercase;
+    color: $headerTextColor;
+    opacity: $headerTextOpacityMobile;
+    span {
+        color: $basicWhiteColor;
+    }
+    @include tablet {
+        text-align: $textAlignLeft;
+        font-size: $headerTabletFontSize;
+        line-height: $headerTabletLineHeight;
+        letter-spacing: 1px;
+        opacity: $headerTextOpacityTabletAndDesktop;
+    }
+    @include desktop {
+        font-size: $headerDesktopFontSize;
+        line-height: $headerDesktopLineHeight;
+        width: 675px;
+    }
 }
 p {
-  margin-top: 16px;
-  font-size: $paragraphMobileFontSize;
-  font-weight: $fontWeight;
-  font-style: $fontStyle;
-  line-height: $paragraphMobileLineHeight;
-  color: $paragraphTextColor;
-  text-align: $textAlignCenter;
-  opacity: $paragraphTextOpacity;
-  @include tablet {
-    text-align: $textAlignLeft;
-    font-size: $paragraphTabletFontSize;
-    line-height: $paragraphTabletLineHeight;
-    width: 445px;
-    padding-top: 12px;
-    padding-bottom: 2px;
-  }
+    margin-top: 16px;
+    font-size: $paragraphMobileFontSize;
+    font-weight: $fontWeight;
+    font-style: normal;
+    line-height: $paragraphMobileLineHeight;
+    color: $paragraphTextColor;
+    text-align: $textAlignCenter;
+    opacity: $paragraphTextOpacity;
+    @include tablet {
+        text-align: $textAlignLeft;
+        font-size: $paragraphTabletFontSize;
+        line-height: $paragraphTabletLineHeight;
+        width: 445px;
+        padding-top: 12px;
+        padding-bottom: 2px;
+    }
 }
-  
+
 .networks {
     width: 98%;
     height: 100%;
@@ -193,58 +192,59 @@ p {
     align-items: baseline;
     opacity: $networkAvatarOpacity;
     @include tablet {
-      width: 85%;
-      margin-left: 0;
-      margin-top: 4px;
+        width: 85%;
+        margin-left: 0;
+        margin-top: 4px;
     }
     @include desktop {
-      width: 536px;
-      margin-top: -8px;
+        width: 536px;
+        margin-top: -8px;
     }
 }
 .spotify-list {
     width: 56px;
     @include tablet {
-      width: 96px;
-      height: 29px;
+        width: 96px;
+        height: 29px;
     }
 }
 .apple-list {
     width: 45px;
     @include tablet {
-      width: 78px;
-      height: 29px;
+        width: 78px;
+        height: 29px;
     }
 }
 .google-list {
     width: 73px;
     @include tablet {
-      width: 125px;
-      height: 18px;
+        width: 125px;
+        height: 18px;
     }
 }
 .pocket-list {
     width: 77px;
     @include tablet {
-      width: 129px;
-      height: 26px;
+        width: 129px;
+        height: 26px;
     }
 }
-  
+
 form {
     margin-top: 48px;
     position: $parentPosition;
     @include tablet {
-      width: 68%;
-      grid-area: 2/1;
+        width: 68%;
+        grid-area: 2/1;
     }
 }
 
-input[type="submit"], label {
+input[type='submit'],
+label {
     display: $displayBlock;
-  }
-  
-input[type="submit"] {
+}
+
+input[type='submit'] {
     width: 100%;
     padding: 10px;
     position: $childPosition;
@@ -255,34 +255,34 @@ input[type="submit"] {
     line-height: $buttonMobileTextLineHeight;
     font-size: $buttonMobileTextSize;
     color: $buttonTextColor;
-    font-style: $fontStyle;
+    font-style: normal;
     font-weight: bold;
     cursor: pointer;
     &:hover {
-      background-color: $buttonHoverGreenColor;
+        background-color: $buttonHoverGreenColor;
     }
     @include tablet {
-      position: $childPosition;
-      top: 5px;
-      width: 38.5%;
-      right: 5px;
-      font-weight: bold;
-      &:hover {
-        cursor: pointer;
-        background-color: $buttonHoverGreenColor;
-      }
+        position: $childPosition;
+        top: 5px;
+        width: 38.5%;
+        right: 5px;
+        font-weight: bold;
+        &:hover {
+            cursor: pointer;
+            background-color: $buttonHoverGreenColor;
+        }
     }
     @include desktop {
-      position: $childPosition;
-      width: 34%;
-      right: 12.5%;
+        position: $childPosition;
+        width: 34%;
+        right: 12.5%;
     }
     @include largerScreens {
-      position: $childPosition;
-      width: 34%;
-      right: 12.5%;
+        position: $childPosition;
+        width: 34%;
+        right: 12.5%;
     }
-  }
+}
 input.submitInfo {
     width: 100%;
     background-color: $inputBackgroundColor;
@@ -294,16 +294,16 @@ input.submitInfo {
     font-size: $buttonMobileTextSize;
     margin-bottom: 24px;
     @include tablet {
-      position: $childPosition;
-      padding: 15px;
-      margin-bottom: 0;
-      padding-left: 36px;
-      color: $basicWhiteColor;
+        position: $childPosition;
+        padding: 15px;
+        margin-bottom: 0;
+        padding-left: 36px;
+        color: $basicWhiteColor;
     }
     @include desktop {
-      width: 88.5%;
+        width: 88.5%;
     }
-  }
+}
 span.errorMessage {
     width: 100%;
     height: 10px;
@@ -314,38 +314,38 @@ span.errorMessage {
     left: 21px;
     color: $errorMessageColor;
     @include tablet {
-      top: 62px;
-      width: 100%;
-      height: 14px;
-      font-size: 14px;
+        top: 62px;
+        width: 100%;
+        height: 14px;
+        font-size: 14px;
     }
-  }
+}
 span.showErrorMessage {
     display: $displayBlock;
-  }
+}
 footer {
-  display: none;
-  @include tablet {
-    display: $displayBlock;
-    position: $childPosition;
-    width: 232px;
-    top: 780px;
-  }
-  @include desktop {
-    left: auto;
-    right: -586px;
-    width: 232px;
-    top: 600px;
-  }
-  @include largerScreens {
-    left: auto;
-    right: -49.5%;
-    top: 678%;
-  }
+    display: none;
+    @include tablet {
+        display: $displayBlock;
+        position: $childPosition;
+        width: 232px;
+        top: 780px;
+    }
+    @include desktop {
+        left: auto;
+        right: -586px;
+        width: 232px;
+        top: 600px;
+    }
+    @include largerScreens {
+        left: auto;
+        right: -49.5%;
+        top: 678%;
+    }
 }
 
 footer img {
-  width: 100%;
-  display: $displayBlock;
-  margin: auto;
+    width: 100%;
+    display: $displayBlock;
+    margin: auto;
 }

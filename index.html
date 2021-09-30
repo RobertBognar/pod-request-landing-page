@@ -1,53 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/images/favicon-32x32.png"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./assets/styles/style.css" />
+        <title>Pod Access Landing Page</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/styles/style.css">
-    <title>Pod Access Landing Page</title>
-</head>
-
-<body>
-    <div class="opacity"></div>
-    <div class="container">
-        <header>
-            <div class="header-container">
-                <img src="./assets/images/desktop/logo.svg" alt="logo">
-            </div>
-        </header>
-        <main>
-            <div class="hero">
-                <h1>Publish your podcasts<span> everywhere.</span></h1>
-                <p>
-                    Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify,
-                    Apple Podcasts, Google Podcasts, Pocket Casts and more!
-                </p>
-            </div>
-            <div class="networks">
-                <img src="./assets/images/desktop/spotify.svg" alt="spotify podcast list" class="spotify-list">
-                <img src="./assets/images/desktop/apple-podcast.svg" alt="apple podcast list" class="apple-list">
-                <img src="./assets/images/desktop/google-podcasts.svg" alt="google podcast list" class="google-list">
-                <img src="./assets/images/desktop/pocket-casts.svg" alt="pocket podcast list" class="pocket-list">
-            </div>
-            <form>
-                <label>
-                    <input type="email" name="email" class="submitInfo" required placeholder="Email address">
-                    <span class="errorMessage">Oops! Please check your email</span>
-                </label>
-                <a href="#top"><input type="submit" value="Request access"></a>
-            </form>
-        </main>
-        <footer>
-            <img src="./assets/images/desktop/bg-pattern-dots.svg" alt="footer dots">
-        </footer>
-    </div>
-    <script src="app.js"></script>
-</body>
-
+    <body>
+        <div class="opacity"></div>
+        <div class="container">
+            <header>
+                <div class="header-container">
+                    <img src="./assets/images/desktop/logo.svg" alt="logo" />
+                </div>
+            </header>
+            <main>
+                <div class="hero">
+                    <h1>Publish your podcasts<span> everywhere.</span></h1>
+                    <p>
+                        Upload your audio to Pod with a single click. We’ll then
+                        distribute your podcast to Spotify, Apple Podcasts,
+                        Google Podcasts, Pocket Casts and more!
+                    </p>
+                </div>
+                <div class="networks">
+                    <img
+                        src="./assets/images/desktop/spotify.svg"
+                        alt="spotify podcast list"
+                        class="spotify-list"
+                    />
+                    <img
+                        src="./assets/images/desktop/apple-podcast.svg"
+                        alt="apple podcast list"
+                        class="apple-list"
+                    />
+                    <img
+                        src="./assets/images/desktop/google-podcasts.svg"
+                        alt="google podcast list"
+                        class="google-list"
+                    />
+                    <img
+                        src="./assets/images/desktop/pocket-casts.svg"
+                        alt="pocket podcast list"
+                        class="pocket-list"
+                    />
+                </div>
+                <form>
+                    <label>
+                        <input
+                            type="email"
+                            name="email"
+                            class="submitInfo"
+                            required
+                            placeholder="Email address"
+                        />
+                        <span class="errorMessage"
+                            >Oops! Please check your email</span
+                        >
+                    </label>
+                    <a href="#top"
+                        ><input type="submit" value="Request access"
+                    /></a>
+                </form>
+            </main>
+            <footer>
+                <img
+                    src="./assets/images/desktop/bg-pattern-dots.svg"
+                    alt="footer dots"
+                />
+            </footer>
+        </div>
+        <script src="app.js"></script>
+    </body>
 </html>

@@ -12,7 +12,7 @@ body {
   background-size: cover;
   background-blend-mode: multiply;
   background-color: #121725;
-  color: #FFFF;
+  color: #ffff;
   overflow-x: hidden;
 }
 
@@ -159,12 +159,12 @@ h1 {
   text-align: center;
   font-style: normal;
   text-transform: uppercase;
-  color: #54E6AF;
+  color: #54e6af;
   opacity: 90%;
 }
 
 h1 span {
-  color: #FFFF;
+  color: #ffff;
 }
 
 @media (min-width: 768px) {
@@ -191,7 +191,7 @@ p {
   font-weight: 300;
   font-style: normal;
   line-height: 25px;
-  color: #C2CBE5;
+  color: #c2cbe5;
   text-align: center;
   opacity: 80%;
 }
@@ -298,16 +298,17 @@ form {
   }
 }
 
-input[type="submit"], label {
+input[type='submit'],
+label {
   display: block;
 }
 
-input[type="submit"] {
+input[type='submit'] {
   width: 100%;
   padding: 10px;
   position: absolute;
   top: 64px;
-  background-color: #54E6AF;
+  background-color: #54e6af;
   border: none;
   border-radius: 30px;
   line-height: 28px;
@@ -318,26 +319,26 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-input[type="submit"]:hover {
-  background-color: #B3FFE2;
+input[type='submit']:hover {
+  background-color: #b3ffe2;
 }
 
 @media (min-width: 768px) {
-  input[type="submit"] {
+  input[type='submit'] {
     position: absolute;
     top: 5px;
     width: 38.5%;
     right: 5px;
     font-weight: bold;
   }
-  input[type="submit"]:hover {
+  input[type='submit']:hover {
     cursor: pointer;
-    background-color: #B3FFE2;
+    background-color: #b3ffe2;
   }
 }
 
 @media (min-width: 1440px) {
-  input[type="submit"] {
+  input[type='submit'] {
     position: absolute;
     width: 34%;
     right: 12.5%;
@@ -345,7 +346,7 @@ input[type="submit"]:hover {
 }
 
 @media (min-width: 1880px) {
-  input[type="submit"] {
+  input[type='submit'] {
     position: absolute;
     width: 34%;
     right: 12.5%;
@@ -354,7 +355,7 @@ input[type="submit"]:hover {
 
 input.submitInfo {
   width: 100%;
-  background-color: #2C344B;
+  background-color: #2c344b;
   padding: 10px;
   padding-left: 30px;
   border: none;
@@ -370,7 +371,7 @@ input.submitInfo {
     padding: 15px;
     margin-bottom: 0;
     padding-left: 36px;
-    color: #FFFF;
+    color: #ffff;
   }
 }
 
@@ -388,7 +389,7 @@ span.errorMessage {
   position: relative;
   top: -22px;
   left: 21px;
-  color: #FB3E3E;
+  color: #fb3e3e;
 }
 
 @media (min-width: 768px) {
